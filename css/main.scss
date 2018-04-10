@@ -16,9 +16,15 @@
 
 .ae-date {
   font-style: italic;
+  border-bottom: 1px dashed black;
+  cursor: pointer;
 }
 
 .container.mw-image {
   margin: initial;
   padding: initial;
+}
+
+.navbar.icons a {
+  color: black !important; /* whyyyy */
 }

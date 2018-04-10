@@ -14,4 +14,43 @@
     <script src='/javascripts/{{ js_file }}.js' type="text/javascript"></script>
     {% endfor %}
   {% endif %}
+
+  <script>
+    var months = {
+      "01": "Yothh",
+      "02": "Twyla",
+      "03": "Rooni",
+      "04": "Deamce",
+      "05": "Cunkur",
+      "06": "Ahilan",
+      "07": "Fyrgat",
+      "08": "Lopar",
+      "09": "Rachi",
+      "10": "Buold",
+      "11": "Vlut",
+      "12": "Unnyt"
+    }
+    var els = document.getElementsByClassName("ae-date");
+    for (var i = 0; i < els.length; i++) {
+      (function() {
+        var el = els[i];
+        var date = el.textContent;
+        var match = date.match(/^AE(\d+)-(\d+)-(\d+)$/);
+        if (match) {
+          var formatted = true;
+          var formattedDate = months[match[2]] + " " + match[3] + ", " + match[1] + " AE";
+          el.textContent = formattedDate;
+          el.setAttribute("title", date);
+          el.addEventListener("click", function () {
+            formatted = !formatted;
+            if (formatted) {
+              el.textContent = formattedDate;
+            } else {
+              el.textContent = date;
+            }
+          })
+        }
+      })()
+    }
+  </script>
 </html>

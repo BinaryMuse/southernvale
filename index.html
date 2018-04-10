@@ -9,11 +9,16 @@ layout: default
 
 <div class="row justify-content-center">
   <div class="col-md-8">
-    {% assign categories = site.categories | sort %}
-    {% for category in categories %}
-      <h3 class="mt-4">{{ category | first }}</h3>
-      <p>{% for post in category[1] %}{{ forloop.index }}.&nbsp;<a class="mr-2" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }} </a>{% endfor %}</p>
-    {% endfor %}
+    <h3 class="mt-4">Writings</h3>
+    <ul>
+      {% for post in site.posts %}
+        <li>
+          <a class="mr-2" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><br>
+          <i class="far fa-calendar-alt"></i> <span class="ae-date">{{ post.date | date: "AE%Y-%m-%d" }}</span><br>
+          <i class="far fa-folder"></i> {{ post.categories | array_to_sentence_string }}
+        </li>
+      {% endfor %}
+    </ul>
 
     <hr>
 
