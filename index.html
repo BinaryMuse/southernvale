@@ -14,5 +14,23 @@ layout: default
       <h3 class="mt-4">{{ category | first }}</h3>
       <p>{% for post in category[1] %}{{ forloop.index }}.&nbsp;<a class="mr-2" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }} </a>{% endfor %}</p>
     {% endfor %}
+
+    <hr>
+
+    <h3 class="mt-4">Resources</h3>
+    <ul>
+      <li><a href="https://docs.google.com/document/d/1pzP0GLosN02VXsbQlceqrWnZ_hYGueXPOGzRxY51_O8/edit?usp=sharing">Southern Vale Primer</a></li>
+      <li><a href="https://docs.google.com/document/d/1QZ5GSsq0OqVjQUymnwnRuuw-P1LwwJYf5R696sHFy_0/edit?usp=sharing">Pages from a Gamekeeper's Journal</a></li>
+      <li><a href="https://docs.google.com/document/d/1VFdZe3w-43LUXkmnZCxx9CggO65a935B5AjEwNTWUcs/edit?usp=sharing">House Rules</a></li>
+      <li><a href="https://docs.google.com/document/d/1q5S-cnGSXcGWbZSpmrL-3st4CMXY2SjrjlCsylKDwpQ/edit?usp=sharing">Downtime</a></li>
+      <li><a href="https://docs.google.com/document/d/1vDkvuo_DVLeyIom0rHHdhFPd5g8UZr-7rywUP5xKUHs/edit?usp=sharing">Basic Info about the World and Continent</a></li>
+      <li><a href="https://docs.google.com/document/d/1J9AzFBrh371TZb3ztfhaBFI0iteam924WXdx0RHqdcc/edit?usp=sharing">Items Available from the Artificer for Guild Tokens</a></li>
+    </ul>
+
+    <h3 class="mt-4">The Map (Updated 3/25)</h3>
+
+    <a href="/assets/hex-map-3-25.jpg">
+      <img src="/assets/hex-map-3-25.jpg" style="width: 500px">
+    </a>
   </div>
 </div>
