@@ -16,7 +16,7 @@
 title: The Southern Vale
 email: michelle@michelletilley.net
 description: >- # this means to ignore newlines until "baseurl:"
-  The adventures and musings of Camille Naïllen, half-elf fighter, as she explores the Southern Vale"
+  The adventures and musings of Camille Naïllen, half-elf fighter, as she explores the Southern Vale
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://southernvale.net" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: /:year/:month/:day/:title:output_ext
