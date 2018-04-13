@@ -1,5 +1,6 @@
 ---
 title: "Southern Vale Adventurers"
+description: "A list of other adventurers exploring the Southern Vale"
 layout: page
 ---
 
